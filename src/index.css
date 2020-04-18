@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap");
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryDesc {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+@media only screen and (max-width: 1200px) {
+  .category {
+    flex-direction: column;
+  }
+}
+.category__img {
+  position: relative;
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+}
+.category__img img {
+  border-radius: 5px;
+}
+.category__img--name {
+  background-color: #f8f9ff;
+  position: absolute;
+  top: 70%;
+  width: 60%;
+  text-align: center;
+  box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+}
+@media only screen and (max-width: 1200px) {
+  .category__img--name {
+    width: 20% !important;
+  }
+}
+
+.slider img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1250px;
+}
+.header__icons svg {
+  margin-left: 13px;
+  font-size: 30px;
+  margin-top: -3px;
+  color: #455368;
+}
+@media only screen and (max-width: 1200px) {
+  .header__icons svg {
+    margin-top: unset !important;
+    padding: 5px;
+  }
+}
+.header__logo {
+  margin-left: -2%;
+}
+.header__logo img {
+  width: 200px;
+}
+.header__navigation {
+  border-radius: 3px;
+  width: 1160px;
+  height: 49px;
+  margin-top: -1.5%;
+  background-color: #455368;
+}
+@media only screen and (max-width: 1200px) {
+  .header__navigation {
+    height: unset !important;
+  }
+}
+
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.navigation__item {
+  padding: 1%;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.navigation__item:hover {
+  border-bottom: 2px solid #ff4d00;
+}
+
+.search {
+  flex-basis: 800px;
+}
+.search__input {
+  padding: 10px;
+  margin-top: -10px;
+  width: 90%;
+  border-radius: 3px;
+  border: 1px solid rgba(105, 104, 106, 0.54);
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1200px) {
+  .products {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .products a {
+    margin-top: 15px;
+  }
+}
+.products__block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c3c3c3;
+  height: 250px;
+  width: 250px;
+  padding: 0.1%;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.products__block img {
+  width: 200px;
+}
+.products__moreInfo {
+  position: absolute;
+  background-color: #f8f9ff;
+  position: absolute;
+  text-align: center;
+  top: 82%;
+  width: 65%;
+  text-align: center;
+  box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+}
+
+.product {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.product img {
+  width: 250px;
+}
+.product__buyQuantity {
+  width: 15%;
+  padding: 5px;
+  border-radius: 5px;
+  border: unset;
+  border-bottom: 1px solid #0000006b;
+}
+.product__buy {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.product__buyBtn {
+  border: none;
+  margin-right: 5px;
+  background: #ff4d00;
+  padding: 10px;
+  width: 20%;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.footer {
+  margin-top: 80px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+.footer__socialIcons {
+  font-size: 30px;
+}
+.footer__socialIcons svg {
+  padding: 5px;
+  color: #455368;
+}
+.footer p {
+  margin-top: -10px;
+}
+
+.loginBox {
+  margin-top: 50px;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  padding: 55px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.loginBox form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.loginBox a {
+  text-decoration: unset;
+  color: #ff4d00;
+}
+.loginBox__button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 29%;
+  cursor: pointer;
+  background-color: #ff4d00;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.loginBox svg {
+  font-size: 50px;
+  color: #455368;
+}
+.loginBox p {
+  padding: 5px;
+  margin: 0;
+}
+.loginBox input {
+  padding: 10px;
+  border: unset;
+  border-bottom: 1px solid #939393;
+}
+
+.registerBox {
+  margin-top: 50px;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  padding: 55px;
+  font-size: 20px;
+  text-align: center;
+  width: 25%;
+  align-items: center;
+  border-radius: 5px;
+}
+.registerBox p {
+  padding: 5px;
+  margin: 0;
+}
+.registerBox form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.registerBox input {
+  padding: 10px;
+  margin-top: 25px;
+  width: 40%;
+  border: unset;
+  border: 1px solid rgba(0, 0, 0, 0.29);
+  border-radius: 5px;
+}
+.registerBox__button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 27%;
+  cursor: pointer;
+  background-color: #ff4d00;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.shoppingCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shoppingCart__buyBtn {
+  width: 50%;
+  padding: 10px;
+  background-color: #ff4d00;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.shoppingCart__product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.shoppingCart__product p {
+  padding: 5px;
+}
+.shoppingCart__productQnt {
+  padding: 5px;
+  width: 8%;
+  height: 5%;
+}
+
+/*# sourceMappingURL=index.css.map */
