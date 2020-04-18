@@ -162,6 +162,7 @@ body {
   position: absolute;
   text-align: center;
   top: 82%;
+  color: #ad3400;
   width: 65%;
   text-align: center;
   box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
@@ -201,6 +202,11 @@ body {
   cursor: pointer;
   margin-top: 10px;
   font-size: 18px;
+}
+@media only screen and (max-width: 1200px) {
+  .product__buyBtn {
+    width: 100% !important;
+  }
 }
 
 .footer {
