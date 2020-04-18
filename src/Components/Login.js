@@ -4,7 +4,7 @@ import {faDoorOpen, faUser} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {ErrorMessage, useForm} from "react-hook-form";
 import Footer from "./Footer";
-
+import { Link } from "react-router-dom";
 function Login() {
     const { handleSubmit, register, errors } = useForm({
         mode: "onChange"
@@ -18,7 +18,7 @@ function Login() {
                 <form onSubmit={handleSubmit(onSubmit)}>
                 <FontAwesomeIcon icon={faDoorOpen}/>
                 <p>Zaloguj się, aby mieć dostęp do wszystkich funkcjonalności naszego sklepu.</p>
-                    <p>Nie masz konta? <a href="/register">Zarejestruj się!</a></p>
+                    <p>Nie masz konta? <Link to="/register">Zarejestruj się!</Link></p>
                 <p>Nazwa użytkownika:</p>
                 <input type="text" name="login" placeholder="Tutaj wpisz swój nick"  ref={register({ required: true })}/>
                     <ErrorMessage errors={errors} name="login" message="Nie wpisano loginu" />

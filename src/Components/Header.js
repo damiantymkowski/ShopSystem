@@ -3,14 +3,14 @@ import logo from '../logo.svg';
 import baner from '../baner.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faUser, faHeart } from '@fortawesome/free-solid-svg-icons'
-
+import { Link } from "react-router-dom";
 function Header() {
     return (
         <React.Fragment>
             <header className="header">
             <a href="/"><div className="header__logo"><img src={logo}/></div></a>
                 <div className="search"><input className="search__input" type="text" placeholder="Jakich mebli szukasz?"/></div>
-               <div className="header__icons"><a href="/login"><FontAwesomeIcon icon={faUser}/></a><FontAwesomeIcon icon={faHeart} /><a href="/cart"><FontAwesomeIcon icon={faShoppingCart}/></a></div>
+               <div className="header__icons"><Link to="/login"><FontAwesomeIcon icon={faUser}/></Link><FontAwesomeIcon icon={faHeart} /><Link to="/cart"><FontAwesomeIcon icon={faShoppingCart}/></Link></div>
                 <div className="header__navigation">
                     <ul className="navigation">
                     <li className="navigation__item">Sypialnia</li>
