@@ -10,7 +10,7 @@ function Product(props) {
             <Header/>
             <div className="product">
               <h2 className="product__title">Aktualnie przeglądasz: {props.location.query.title}</h2>
-                <img src={props.location.query.img}/>
+                <img src={props.location.query.img} />
                 <div className="product__description">
                     {props.location.query.desc}
                 </div>
