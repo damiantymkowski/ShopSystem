@@ -333,3 +333,46 @@ justify-content: center;
     height: 5%;
   }
 }
+
+.order{
+  width: 50%;
+  h4{
+   color: rgba(40, 44, 52, 0.76);
+  }
+  input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid rgba(40, 44, 52, 0.41);
+    margin-bottom: 10px;
+  }
+  h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400 !important;
+    color: rgba(40, 44, 52, 0.73);
+  }
+  &__accordion{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  &__panel{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid rgba(77, 74, 80, 0.29);
+    margin-bottom: 1px;
+  }
+}
+
+.active, .order__accordion:hover{
+  background-color: #ccc;
+}
