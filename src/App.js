@@ -6,7 +6,7 @@ import Product from "./Components/Product";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
 import ShoppingCart from "./Components/ShoppingCart";
-
+import Order from "./Components/Order";
 function App() {
   return (
       <React.Fragment>
@@ -17,6 +17,7 @@ function App() {
                   <Route path={"/login"} exact component={Login} />
                   <Route path={"/register"} exact component={Register} />
                   <Route path={"/cart"} exact component={ShoppingCart} />
+                  <Route path={"/order"} exact component={Order}/>
               </Switch>
           </Router>
       </React.Fragment>
