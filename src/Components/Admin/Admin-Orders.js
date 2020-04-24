@@ -4,7 +4,7 @@ import Footer from '../Footer';
 function Admin_Orders(){
     return(
 <React.Fragment>
-    <div className="admin_orders__bar">Przegląd zamówień <img src={logo}/> Panel Administratora</div>
+    <div className="adminHeader">Przegląd zamówień <img src={logo}/> Panel Administratora</div>
     <div className={"container"}>
 <div className="admin_orders">
     <div className="admin_orders__table">
