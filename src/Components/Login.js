@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {ErrorMessage, useForm} from "react-hook-form";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+
 function Login() {
     const { handleSubmit, register, errors } = useForm({
         mode: "onChange"
