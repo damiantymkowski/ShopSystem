@@ -62,15 +62,16 @@ function Order(){
         <button className="order__accordion">Sposób płatności</button>
         <div className="order__panel">
 
-            <h4>Ulica</h4>
-            <input type="text"/>
-            <h4>Kod pocztowy</h4>
-            <input type="text"/>
-            <h4>Miasto</h4>
-            <input type="text"/>
+            <h4>Przelew</h4>
+            <input type="radio" name="test"/>
+            <h4>Karta płatnicza</h4>
+            <input type="radio" name="test"/>
+            <h4>BLIK</h4>
+            <input type="radio" name="test"/>
 
         </div>
-
+        Całkowita wartość zamówienia: <p></p>
+<button>Złoż zamówienie</button>
     </div>
 </div>
 <Footer/>
