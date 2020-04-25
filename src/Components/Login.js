@@ -26,6 +26,7 @@ function Login() {
                 <input type="password" name="password" placeholder="Twoje bezpieczne hasło" ref={register({ required: true })}/>
                     <ErrorMessage errors={errors} name="password" message="Nie wpisano hasła" />
                 <button className="loginBox__button">Zaloguj się!</button>
+                    <Link to="/forgotpassword">Zapomniane hasło</Link>
                 </form>
             </div>
             </div>

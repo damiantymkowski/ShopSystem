@@ -10,6 +10,7 @@ import Order from "./Components/Order";
 import Admin_Orders from "./Components/Admin/Admin-Orders";
 import AddProduct from "./Components/Admin/AddProduct";
 import AddUser from "./Components/Admin/AddUser";
+import ForgotPassword from "./Components/ForgotPassword";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                   <Route path={"/admin/orders"} exact component={Admin_Orders}/>
                   <Route path={"/admin/addproduct"} exact component={AddProduct}/>
                   <Route path={"/admin/adduser"} exact component={AddUser}/>
+                  <Route path={"/forgotpassword"} exact component={ForgotPassword}/>
               </Switch>
           </Router>
       </React.Fragment>
