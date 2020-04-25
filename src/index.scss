@@ -311,7 +311,7 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   &__buyBtn{
-    width: 50%;
+    width: 100%;
     padding: 10px;
     background-color: #ff4d00;
     border: none;
@@ -413,6 +413,9 @@ justify-content: center;
       width: 50%;
       border-radius: 5px;
       text-align: center;
+      @media only screen and (max-width:1500px) {
+        width: 100%;
+      }
     }
     &--canceled{
       background-color: #ff594f;
@@ -421,6 +424,9 @@ justify-content: center;
       width: 50%;
       border-radius: 5px;
       text-align: center;
+      @media only screen and (max-width:1500px) {
+        width: 100%;
+      }
     }
     &--waiting{
       background-color: rgba(138, 219, 255, 0.84);
@@ -429,12 +435,28 @@ justify-content: center;
       width: 50%;
       border-radius: 5px;
       text-align: center;
+      @media only screen and (max-width:1500px) {
+        width: 100%;
+
+      }
     }
     div{
       text-align: center;
       padding: 10px;
       flex-grow: 1;
       width: 12%;
+      @media only screen and (max-width:1500px) {
+        width: 12% !important;
+      }
+      @media only screen and (max-width:1200px) {
+        width: 12% !important;
+      }
+      @media only screen and (max-width:900px) {
+        width: 11% !important;
+      }
+      @media only screen and (max-width:500px) {
+        width: 8% !important;
+      }
       display: flex;
       border-bottom: 1px solid rgba(204, 204, 214, 0.72);
       justify-content: center;
@@ -561,10 +583,27 @@ button:focus{
       text-align: center;
       padding: 10px;
       flex-grow: 1;
-      width: 18%;
+      width: 17%;
+      @media only screen and (max-width:1200px) {
+        width: 15% !important;
+      }
       display: flex;
       border-bottom: 1px solid rgba(204, 204, 214, 0.72);
       justify-content: center;
     }
+  }
+}
+
+.admin_menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  a{
+    background-color: #f34800;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    color: #fff3f8;
   }
 }
