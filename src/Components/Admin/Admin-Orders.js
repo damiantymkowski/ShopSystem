@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../logo.svg';
 import Footer from '../Footer';
+import AdminMenu from "./AdminMenu";
 function Admin_Orders(){
     return(
 <React.Fragment>
@@ -20,6 +21,7 @@ function Admin_Orders(){
     </div>
 </div>
     </div>
+    <AdminMenu/>
 <Footer/>
 </React.Fragment>
     );

@@ -3,7 +3,7 @@ import logo from "../../logo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCamera} from '@fortawesome/free-solid-svg-icons'
 import Footer from "../Footer";
-
+import AdminMenu from "./AdminMenu";
 function AddProduct(){
 
     useEffect(() => {
@@ -47,6 +47,7 @@ function AddProduct(){
                     <button className="addProduct__btn">Dodaj produkt</button>
                 </div>
             </div>
+        <AdminMenu/>
             <Footer/>
         </React.Fragment>
     );

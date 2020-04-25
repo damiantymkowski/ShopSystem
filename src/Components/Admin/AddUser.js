@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from "../../logo.svg";
 import Footer from "../Footer";
-
+import AdminMenu from "./AdminMenu";
 function AddUser(){
     return(
         <React.Fragment>
@@ -25,6 +25,7 @@ function AddUser(){
                 </div>
             </div>
         </div>
+            <AdminMenu/>
             <Footer/>
         </React.Fragment>
     );
