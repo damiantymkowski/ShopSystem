@@ -639,4 +639,31 @@ button:focus {
   color: #fff3f8;
 }
 
+.adminLogin {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.adminLogin input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.adminLogin input:focus {
+  outline: none;
+}
+.adminLogin button {
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  background: #ff4d00;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */
